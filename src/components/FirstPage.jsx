@@ -6,7 +6,7 @@ function FirstPage() {
 
   return (
     <div>
-      <p>Es un cliente o un almacen?</p>
+      <p>¿Es usted cliente o negocio?</p>
       <button
         onClick={() => {
           navigate("/login", { state: { cliente: true } });
