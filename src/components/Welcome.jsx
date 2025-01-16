@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-function FirstPage() {
+function Welcome() {
   const navigate = useNavigate();
 
   return (
@@ -25,4 +25,4 @@ function FirstPage() {
   );
 }
 
-export default FirstPage;
+export default Welcome;
