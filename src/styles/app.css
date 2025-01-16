@@ -1,24 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap");
-* {
-  font-family: Reddit Sans;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-figure img {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.main-container {
-  min-height: 100vh;
-  background-color: #F4F1F1;
+.form-page {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  text-align: left;
   padding: 1rem;
+}
+.form-page h3 {
+  text-align: center;
+  text-shadow: -3px 3px 10px #333;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.user-form .input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.user-form input {
+  border-radius: 10px;
+  border: 1px solid gray;
+  padding: 0.6rem;
+  font-size: 1rem;
+}
+.user-form p {
+  text-align: center;
+}
+
+.welcome-page {
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 7vh;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.buttons-welcome {
+  display: flex;
+  gap: 1rem;
 }
 
 nav {
@@ -44,24 +70,31 @@ nav ul figure {
   width: 2.8rem;
 }
 
+* {
+  font-family: Reddit Sans;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+figure img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.main-container {
+  min-height: 100vh;
+  background-color: #F4F1F1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
 .content-page {
   flex: 1;
   display: flex;
   flex-direction: column;
-  font-size: 1.2rem;
-}
-
-.welcome-page {
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 10vh;
-  text-align: center;
-  gap: 0.5rem;
-}
-
-.buttons-welcome {
-  display: flex;
-  gap: 1rem;
 }
 
 button {
@@ -76,14 +109,6 @@ button {
 button:hover {
   color: orange;
   cursor: pointer;
-}
-
-.form-pages {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 1rem;
-  text-align: left;
 }
 
 /*# sourceMappingURL=app.css.map */

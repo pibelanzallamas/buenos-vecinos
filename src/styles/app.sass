@@ -1,6 +1,9 @@
 @import  url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap')
 
+@import "forms"
+@import "welcome"
+@import "navbar"
 *
   font-family: Reddit Sans
   padding: 0
@@ -20,40 +23,10 @@ figure
   flex-direction: column
   padding: 1rem
 
-nav
-  padding: 1rem
-  ul
-    display: flex
-    justify-content: space-between
-    list-style-type: none
-    align-items: center
-    h3
-      width: 10ch
-      font-weight: 500
-      font-size: 1.7rem
-      cursor: pointer
-      line-height: 1.2rem
-    h3:hover
-      color: orange
-    figure
-      width: 2.8rem
-
 .content-page
   flex: 1
   display: flex
   flex-direction: column  
-  font-size: 1.2rem
-
-.welcome-page
-  align-items: center
-  justify-content: flex-start
-  padding-top: 10vh
-  text-align: center
-  gap: 0.5rem
-
-.buttons-welcome
-  display: flex
-  gap: 1rem
 
 button
   background-color: black
@@ -66,10 +39,3 @@ button
 button:hover
   color: orange
   cursor: pointer
-
-.form-pages
-  display: flex
-  flex-direction: column
-  width: 100%
-  gap: 1rem
-  text-align: left
