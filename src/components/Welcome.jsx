@@ -7,22 +7,22 @@ function Welcome() {
   return (
     <div className="welcome-page">
       <p>
-        Bienvenido a Buenos Vecinos,<p></p> ¿es usted un cliente o un comercio?
+        Bienvenido a Buenos Vecinos,<p></p> ¿usted poseé una cuenta registrada?
       </p>
       <div className="buttons-welcome">
         <button
           onClick={() => {
-            navigate("/login", { state: { cliente: true } });
+            navigate("/login");
           }}
         >
-          Cliente
+          Ingresar
         </button>
         <button
           onClick={() => {
-            navigate("/login", { state: { cliente: false } });
+            navigate("/register");
           }}
         >
-          Comercio
+          Registrarse
         </button>
       </div>
     </div>
