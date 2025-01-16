@@ -5,7 +5,7 @@ function Welcome() {
   const navigate = useNavigate();
 
   return (
-    <div className="welcome-page">
+    <div className="content-page welcome-page">
       <p>
         Bienvenido a Buenos Vecinos,<p></p> ¿usted poseé una cuenta registrada?
       </p>
