@@ -6,9 +6,7 @@ function Welcome() {
 
   return (
     <div className="content-page welcome-page">
-      <p>
-        Bienvenido a Buenos Vecinos,<p></p> ¿usted poseé una cuenta registrada?
-      </p>
+      <p>Bienvenido a Buenos Vecinos</p>
       <div className="buttons-welcome">
         <button
           onClick={() => {

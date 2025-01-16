@@ -7,6 +7,10 @@ function Login() {
     console.log("hoooa");
   }
 
+  function handleClick() {
+    console.log("click");
+  }
+
   return (
     <div className="content-page form-page">
       <h3>Iniciar Sesión</h3>
@@ -21,8 +25,11 @@ function Login() {
         </div>
         <button type="submit">Entrar</button>
       </form>
-
-      <p>¿Necesita registrarse?</p>
+      <p>
+        <a href="#" onClick={() => handleClick()}>
+          ¿Necesíta registrarse?
+        </a>
+      </p>
     </div>
   );
 }
