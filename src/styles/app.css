@@ -34,7 +34,7 @@
   margin-top: 0.4rem;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .form-page {
     width: 30vw;
     margin: 0 auto;
@@ -57,7 +57,7 @@
   font-family: Inter !important;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .welcome-page {
     padding-top: 20vh;
   }
@@ -90,7 +90,7 @@ nav ul figure {
   padding: 2rem 2rem 0 2rem;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   nav figure {
     display: none;
   }
