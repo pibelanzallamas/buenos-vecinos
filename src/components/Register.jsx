@@ -17,93 +17,137 @@ function Register() {
       <section>
         <form onSubmit={(e) => handleSubmit(e)}>
           <div className="input">
-            <label htmlFor="email">Nombre y Apellido</label>
+            <label htmlFor="name">Nombre y Apellido</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              maxLength={45}
+              minLength={5}
+              required
+            ></input>
+          </div>
+          <div className="input">
+            <label htmlFor="email">Email</label>
             <input
               type="email"
               name="email"
-              id="name"
+              id="email"
+              maxLength={30}
+              minLength={5}
+              required
+            ></input>
+          </div>
+          <div className="input">
+            <label htmlFor="country">País</label>
+            <input
+              type="text"
+              name="country"
+              id="country"
+              maxLength={25}
+              minLength={3}
+              required
+            ></input>
+          </div>
+          <div className="input">
+            <label htmlFor="providence">Provincia</label>
+            <input
+              type="text"
+              name="providence"
+              id="providence"
+              maxLength={25}
+              minLength={3}
+              required
+            ></input>
+          </div>
+          <div className="input">
+            <label htmlFor="city">Ciudad</label>
+            <input
+              type="text"
+              name="city"
+              id="city"
+              maxLength={25}
+              minLength={3}
+              required
+            ></input>
+          </div>
+          <div className="input">
+            <label htmlFor="district">Barrio/Districto</label>
+            <input
+              type="text"
+              name="district"
+              id="district"
+              maxLength={25}
+              minLength={3}
+              required
+            ></input>
+          </div>
+          <div className="input">
+            <label htmlFor="password">Contraseña</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              maxLength={30}
+              minLength={8}
+              required
+            ></input>
+          </div>
+          <div className="input">
+            <label htmlFor="repeat-password">Repetir Contraseña</label>
+            <input
+              type="password"
+              name="password"
+              id="repeat-password"
+              maxLength={30}
+              minLength={8}
+              required
+            ></input>
+          </div>
+          <div className="input">
+            <label htmlFor="number">Numero</label>
+            <input
+              type="number"
+              name="number"
+              id="number"
+              max={9999999999999}
               maxLength={20}
-              required
+              min={111111}
             ></input>
           </div>
           <div className="input">
-            <label htmlFor="password">Email</label>
-            <input type="email" name="password" id="password" required></input>
+            <label htmlFor="rol">Elegir rol</label>
+            <select name="rol" id="rol" defaultValue={"client"} required>
+              <option value={"client"}>Cliente</option>
+              <option value={"commerce"}>Comercio</option>
+            </select>
           </div>
           <div className="input">
-            <label htmlFor="email">País</label>
-            <input type="email" name="email" id="name" required></input>
-          </div>
-          <div className="input">
-            <label htmlFor="password">Provincia</label>
+            <label htmlFor="commerce-name">Nombre del Negocio</label>
             <input
-              type="password"
-              name="password"
-              id="password"
+              type="text"
+              name="commerce-name"
+              id="commerce-name"
+              maxLength={25}
+              minLength={3}
               required
             ></input>
           </div>
           <div className="input">
-            <label htmlFor="email">Ciudad</label>
-            <input type="email" name="email" id="name" required></input>
-          </div>
-          <div className="input">
-            <label htmlFor="password">Barrio/Districto</label>
-            <input
-              type="password"
-              name="password"
-              id="password"
+            <label htmlFor="commerce-type">Rubro de Comercio</label>
+            <select
+              name="commerce-type"
+              id="rcommerce-type"
+              defaultValue={"almacen"}
               required
-            ></input>
-          </div>
-          <div className="input">
-            <label htmlFor="email">Contraseña</label>
-            <input type="email" name="email" id="name" required></input>
-          </div>
-          <div className="input">
-            <label htmlFor="password">Repetir Contraseña</label>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              required
-            ></input>
-          </div>
-          <div className="input">
-            <label htmlFor="password">Numero</label>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              required
-            ></input>
-          </div>
-          <div className="input">
-            <label htmlFor="password">Elegir rol</label>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              required
-            ></input>
-          </div>
-          <div className="input">
-            <label htmlFor="password">Nombre del Negocio</label>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              required
-            ></input>
-          </div>
-          <div className="input">
-            <label htmlFor="password">Tipo de Negocio</label>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              required
-            ></input>
+            >
+              <option value={"alamcen"}>Almacén</option>
+              <option value={"carniceria"}>Carnicería</option>
+              <option value={"verduleria"}>Verduleríá</option>
+              <option value={"dietetica"}>Dietética</option>
+              <option value={"kiosko"}>Kiosco</option>
+              <option value={"granja"}>Granja</option>
+            </select>
           </div>
 
           <div></div>
