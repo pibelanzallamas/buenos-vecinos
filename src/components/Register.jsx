@@ -3,10 +3,11 @@ import { useNavigate } from "react-router-dom";
 
 function Register() {
   const navigate = useNavigate();
-  function handleSubmit(e) {
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("hoooa");
-  }
+  };
 
   return (
     <div className="content-page login-page register-page">
@@ -17,7 +18,13 @@ function Register() {
         <form onSubmit={(e) => handleSubmit(e)}>
           <div className="input">
             <label htmlFor="email">Nombre y Apellido:</label>
-            <input type="email" name="email" id="name" required></input>
+            <input
+              type="email"
+              name="email"
+              id="name"
+              maxLength={20}
+              required
+            ></input>
           </div>
           <div className="input">
             <label htmlFor="password">Email:</label>

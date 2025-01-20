@@ -100,6 +100,14 @@ form button {
     width: 24rem;
   }
 }
+@media (min-width: 1000px) {
+  form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+}
 * {
   font-family: Reddit Sans;
   padding: 0;

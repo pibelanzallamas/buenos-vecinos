@@ -3,10 +3,11 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 function Login() {
   const navigate = useNavigate();
-  function handleSubmit(e) {
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("hoooa");
-  }
+  };
 
   return (
     <div className="content-page login-page">
