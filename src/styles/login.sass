@@ -1,23 +1,20 @@
-.form-page
-  display: flex
-  flex-direction: column
+.login-page
+  padding: 1rem
   width: 100%
   gap: 1rem
   text-align: center
-  padding: 1rem
   h3
-    text-align: center
     text-shadow: -3px 3px 10px #333
 
-.user-form
+form
   display: flex
   flex-direction: column
   gap: 0.9rem
   .input
-    text-align: left
     display: flex
     flex-direction: column
     gap: 0.2rem
+    text-align: left
   input
     border-radius: 10px
     border: 1px solid gray
@@ -28,6 +25,7 @@
   
 
 @media (min-width: 1000px)
-  .form-page
-    width: 30vw
-    margin: 0 auto
+  .login-page
+    align-items: center
+  form
+    width: 24rem

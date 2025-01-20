@@ -1,67 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap");
-.form-page {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 1rem;
-  text-align: center;
-  padding: 1rem;
-}
-.form-page h3 {
-  text-align: center;
-  text-shadow: -3px 3px 10px #333;
-}
-
-.user-form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.9rem;
-}
-.user-form .input {
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-}
-.user-form input {
-  border-radius: 10px;
-  border: 1px solid gray;
-  padding: 0.6rem;
-  font-size: 1rem;
-}
-.user-form button {
-  margin-top: 0.4rem;
-}
-
-@media (min-width: 1000px) {
-  .form-page {
-    width: 30vw;
-    margin: 0 auto;
-  }
-}
-.welcome-page {
-  font-size: 1.3rem;
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 7vh;
-  text-align: center;
-  gap: 1.5rem;
-}
-
-.buttons-welcome {
-  display: flex;
-  gap: 1rem;
-}
-.buttons-welcome button {
-  font-family: Inter !important;
-}
-
-@media (min-width: 1000px) {
-  .welcome-page {
-    padding-top: 20vh;
-  }
-}
 nav {
   padding: 1rem;
 }
@@ -90,9 +28,76 @@ nav ul figure {
   padding: 2rem 2rem 0 2rem;
 }
 
+.desk-nav-items {
+  display: none;
+}
+
 @media (min-width: 1000px) {
   nav figure {
     display: none;
+  }
+  .desk-nav-items {
+    display: block;
+  }
+}
+.welcome-page {
+  font-size: 1.3rem;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 7vh;
+  gap: 1.5rem;
+}
+
+.buttons-welcome {
+  display: flex;
+  gap: 1rem;
+}
+.buttons-welcome button {
+  font-family: Inter !important;
+}
+
+@media (min-width: 1000px) {
+  .welcome-page {
+    padding-top: 20vh;
+  }
+}
+.login-page {
+  padding: 1rem;
+  width: 100%;
+  gap: 1rem;
+  text-align: center;
+}
+.login-page h3 {
+  text-shadow: -3px 3px 10px #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+form .input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  text-align: left;
+}
+form input {
+  border-radius: 10px;
+  border: 1px solid gray;
+  padding: 0.6rem;
+  font-size: 1rem;
+}
+form button {
+  margin-top: 0.4rem;
+}
+
+@media (min-width: 1000px) {
+  .login-page {
+    align-items: center;
+  }
+  form {
+    width: 24rem;
   }
 }
 * {

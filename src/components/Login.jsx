@@ -1,20 +1,17 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function Login() {
+  const navigate = useNavigate();
   function handleSubmit(e) {
     e.preventDefault();
     console.log("hoooa");
   }
 
-  function handleClick() {
-    console.log("click");
-  }
-
   return (
-    <div className="content-page form-page">
+    <div className="content-page login-page">
       <h3>Iniciar Sesión</h3>
-      <form onSubmit={(e) => handleSubmit(e)} className="user-form">
+      <form onSubmit={(e) => handleSubmit(e)}>
         <div className="input">
           <label htmlFor="email">Email:</label>
           <input type="email" name="email" id="name" required></input>
@@ -26,7 +23,7 @@ function Login() {
         <button type="submit">Entrar</button>
       </form>
       <p>
-        <a href="#" onClick={() => handleClick()}>
+        <a href="#" onClick={() => navigate("/register")}>
           ¿Necesíta registrarse?
         </a>
       </p>

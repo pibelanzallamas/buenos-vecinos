@@ -7,27 +7,33 @@ function Navbar() {
   const [menu, setMenu] = useState(false);
   const navigate = useNavigate();
 
-  function handleMenu() {
-    setMenu(!menu);
-  }
-
   return (
     <nav>
       <ul>
         <li>
           <h3 onClick={() => navigate("/")}>Buenos Vecinos</h3>
         </li>
+
         <li>
           {menu ? (
-            <figure onClick={() => handleMenu()}>
+            <figure onClick={() => setMenu(!menu)}>
               <img src={X} alt="x menu icon"></img>
             </figure>
           ) : (
-            <figure onClick={() => handleMenu()}>
+            <figure onClick={() => setMenu(!menu)}>
               <img src={MenuIcon} alt="hamburger menu icon"></img>
             </figure>
           )}
         </li>
+        <a href="#" className="desk-nav-items">
+          Inicio
+        </a>
+        <a href="#" className="desk-nav-items">
+          Mapa
+        </a>
+        <a href="#" className="desk-nav-items">
+          Fecha Límite
+        </a>
       </ul>
       {menu && (
         <ul className="mobile-menu">
