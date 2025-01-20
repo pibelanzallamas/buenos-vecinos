@@ -25,7 +25,7 @@ function Navbar() {
             </figure>
           )}
         </li>
-        <a href="#" className="desk-nav-items">
+        {/* <a href="#" className="desk-nav-items">
           Inicio
         </a>
         <a href="#" className="desk-nav-items">
@@ -33,7 +33,7 @@ function Navbar() {
         </a>
         <a href="#" className="desk-nav-items">
           Fecha Límite
-        </a>
+        </a> */}
       </ul>
       {menu && (
         <ul className="mobile-menu">

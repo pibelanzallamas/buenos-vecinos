@@ -17,7 +17,7 @@ function Register() {
       <section>
         <form onSubmit={(e) => handleSubmit(e)}>
           <div className="input">
-            <label htmlFor="email">Nombre y Apellido:</label>
+            <label htmlFor="email">Nombre y Apellido</label>
             <input
               type="email"
               name="email"
@@ -27,20 +27,15 @@ function Register() {
             ></input>
           </div>
           <div className="input">
-            <label htmlFor="password">Email:</label>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              required
-            ></input>
+            <label htmlFor="password">Email</label>
+            <input type="email" name="password" id="password" required></input>
           </div>
           <div className="input">
-            <label htmlFor="email">País:</label>
+            <label htmlFor="email">País</label>
             <input type="email" name="email" id="name" required></input>
           </div>
           <div className="input">
-            <label htmlFor="password">Provincia:</label>
+            <label htmlFor="password">Provincia</label>
             <input
               type="password"
               name="password"
@@ -49,11 +44,11 @@ function Register() {
             ></input>
           </div>
           <div className="input">
-            <label htmlFor="email">Ciudad:</label>
+            <label htmlFor="email">Ciudad</label>
             <input type="email" name="email" id="name" required></input>
           </div>
           <div className="input">
-            <label htmlFor="password">Barrio/Districto:</label>
+            <label htmlFor="password">Barrio/Districto</label>
             <input
               type="password"
               name="password"
@@ -62,11 +57,11 @@ function Register() {
             ></input>
           </div>
           <div className="input">
-            <label htmlFor="email">Contraseña:</label>
+            <label htmlFor="email">Contraseña</label>
             <input type="email" name="email" id="name" required></input>
           </div>
           <div className="input">
-            <label htmlFor="password">Repetir Contraseña:</label>
+            <label htmlFor="password">Repetir Contraseña</label>
             <input
               type="password"
               name="password"
@@ -75,7 +70,7 @@ function Register() {
             ></input>
           </div>
           <div className="input">
-            <label htmlFor="password">Numero:</label>
+            <label htmlFor="password">Numero</label>
             <input
               type="password"
               name="password"
@@ -84,7 +79,7 @@ function Register() {
             ></input>
           </div>
           <div className="input">
-            <label htmlFor="password">Elegir rol:</label>
+            <label htmlFor="password">Elegir rol</label>
             <input
               type="password"
               name="password"
@@ -93,7 +88,7 @@ function Register() {
             ></input>
           </div>
           <div className="input">
-            <label htmlFor="password">Nombre del Negocio:</label>
+            <label htmlFor="password">Nombre del Negocio</label>
             <input
               type="password"
               name="password"
@@ -102,7 +97,7 @@ function Register() {
             ></input>
           </div>
           <div className="input">
-            <label htmlFor="password">Tipo de Negocio:</label>
+            <label htmlFor="password">Tipo de Negocio</label>
             <input
               type="password"
               name="password"
@@ -111,13 +106,17 @@ function Register() {
             ></input>
           </div>
 
-          <div className="input">
-            <label>
+          <div></div>
+
+          <div>
+            <label className="checkbox">
               <input type="checkbox"></input>
               ¿Deséa recibir notificaciones?
             </label>
           </div>
 
+          <div></div>
+          <div></div>
           <button type="submit">Entrar</button>
         </form>
       </section>
