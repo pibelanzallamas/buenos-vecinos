@@ -118,12 +118,13 @@ form button {
 .home-page {
   align-items: center;
   text-align: center;
+  padding: 1rem;
 }
 
 .search {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .input-searcher {
@@ -131,7 +132,7 @@ form button {
   border: 1px solid #acacac;
   border-radius: 28px;
   padding: 0.2rem 0.8rem;
-  background-color: #d5c4f1;
+  background-color: #eeebf3;
 }
 .input-searcher input {
   border: none;
@@ -140,6 +141,7 @@ form button {
 }
 .input-searcher figure {
   width: 0.9rem;
+  cursor: pointer;
 }
 
 * {
