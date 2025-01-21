@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Menu from "../assets/Menu.svg";
 import Search from "../assets/Search.svg";
+import { products } from "../utils/products.js";
 
 function Home() {
   const [menu, setMenu] = useState(false);
