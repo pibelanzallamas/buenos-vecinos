@@ -115,6 +115,33 @@ form button {
     margin-top: 0;
   }
 }
+.home-page {
+  align-items: center;
+  text-align: center;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-searcher {
+  display: flex;
+  border: 1px solid #acacac;
+  border-radius: 28px;
+  padding: 0.2rem 0.8rem;
+  background-color: #d5c4f1;
+}
+.input-searcher input {
+  border: none;
+  background-color: inherit;
+  outline: none;
+}
+.input-searcher figure {
+  width: 0.9rem;
+}
+
 * {
   font-family: Reddit Sans;
   padding: 0;
