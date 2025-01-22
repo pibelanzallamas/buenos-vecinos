@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Menu from "../assets/Menu.svg";
 import Search from "../assets/Search.svg";
+import ProductCard from "../commons/ProductCard.jsx";
 import { products } from "../utils/products.js";
 
 function Home() {
@@ -21,7 +22,11 @@ function Home() {
             <img src={Search} alt="search icon" />
           </figure>
         </div>
-        {menu && <div> </div>}
+      </section>
+      <section className="product-list">
+        {products.map((e) => (
+          <ProductCard product={e} />
+        ))}
       </section>
     </div>
   );
