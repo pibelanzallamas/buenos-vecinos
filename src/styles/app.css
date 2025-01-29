@@ -26,6 +26,7 @@ nav ul figure {
 
 .mobile-menu {
   padding: 2rem 2rem 0 2rem;
+  font-size: 1.2rem;
 }
 
 .desk-nav-items {
@@ -119,6 +120,7 @@ form button {
   align-items: center;
   text-align: center;
   padding: 1rem;
+  gap: 1rem;
 }
 
 .search {
@@ -142,6 +144,15 @@ form button {
 .input-searcher figure {
   width: 0.9rem;
   cursor: pointer;
+}
+
+.one-home-section h3 {
+  font-size: 1.4rem;
+  text-align: left;
+}
+
+.product-list {
+  margin-top: 0.4rem;
 }
 
 .product-list {
