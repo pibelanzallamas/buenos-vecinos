@@ -24,36 +24,38 @@ function Home() {
         </div>
       </section>
 
-      <div className="one-home-section">
-        <h3>Las Últimas Ofertas</h3>
-        <div className="product-list">
-          {products.map((e) => (
-            <ProductCard product={e} />
-          ))}
-        </div>
-      </div>
-
-      <div className="one-home-section">
-        <h3>Lo Mejor en Carnes</h3>
-        <div className="product-list">
-          {products
-            .filter((e) => e.categoria == "C")
-            .map((e) => (
+      <section className="all-products">
+        <div className="one-home-section">
+          <h3>Las Últimas Ofertas</h3>
+          <div className="product-list">
+            {products.map((e) => (
               <ProductCard product={e} />
             ))}
+          </div>
         </div>
-      </div>
 
-      <div className="one-home-section">
-        <h3>Lo Mejor en Frutas y Verduras</h3>
-        <div className="product-list">
-          {products
-            .filter((e) => e.categoria == "FyV")
-            .map((e) => (
-              <ProductCard product={e} />
-            ))}
+        <div className="one-home-section">
+          <h3>Lo Mejor en Carnes</h3>
+          <div className="product-list">
+            {products
+              .filter((e) => e.categoria == "C")
+              .map((e) => (
+                <ProductCard product={e} />
+              ))}
+          </div>
         </div>
-      </div>
+
+        <div className="one-home-section">
+          <h3>Lo Mejor en Frutas y Verduras</h3>
+          <div className="product-list">
+            {products
+              .filter((e) => e.categoria == "FyV")
+              .map((e) => (
+                <ProductCard product={e} />
+              ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

@@ -155,6 +155,22 @@ form button {
   margin-top: 0.4rem;
 }
 
+@media (min-width: 1000px) {
+  .register-page form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .register-page form button {
+    margin-top: 0;
+  }
+  .all-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .product-list {
   display: flex;
   flex-direction: column;
@@ -167,6 +183,7 @@ form button {
   background-color: #fef7ff;
   display: flex;
   justify-content: space-between;
+  width: 25rem;
 }
 .product-card .left-side-card {
   display: flex;
